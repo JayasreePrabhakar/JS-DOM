@@ -6,41 +6,51 @@
 
 <body>
     <button onclick="
-        console.log(`Cart: ${cartQuantity}`);   
+        //console.log(`Cart: ${cartQuantity}`); 
+        displayQuantity();
     ">
         View Quantity
     </button>
 
     <button onclick="
-        cartQuantity = cartQuantity + 1;
-        console.log(`Cart: ${cartQuantity}`);
+        //cartQuantity = cartQuantity + 1;
+        updateQuantity(1);
+        //console.log(`Cart: ${cartQuantity}`);
+        displayQuantity();
     ">
         +1
     </button>
 
     <button onclick="
-        cartQuantity = cartQuantity + 2;
-        console.log(`Cart: ${cartQuantity}`);
+        //cartQuantity = cartQuantity + 2;
+        updateQuantity(2);
+        //console.log(`Cart: ${cartQuantity}`);
+        displayQuantity();
     ">
         +2
     </button>
 
     <button onclick="
-        cartQuantity = cartQuantity + 3;
-        console.log(`Cart: ${cartQuantity}`);
+        //cartQuantity = cartQuantity + 3;
+        updateQuantity(3);
+        //console.log(`Cart: ${cartQuantity}`);
+        displayQuantity();
     ">
         +3
     </button>
 
     <button onclick="
-        console.log('The cart has been reset');
+        //console.log('The cart has been reset');
+        //cartQuantity = 0;
+        resetCart();
     ">
         Reset cart
     </button>
 
-    <script>
-        let cartQuantity = 0;
-    </script>
+    <!--<script>
+       //let cartQuantity = 0;
+    </script> -->
+    <script src="script.js"></script>
 </body>
 
 </html>
