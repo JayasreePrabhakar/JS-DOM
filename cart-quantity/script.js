@@ -3,7 +3,7 @@
 let cartQuantity = Number(localStorage.getItem("cartQuantity"));
 
 if(!cartQuantity) {
-    localStorage.setItems("cartQuantity", 0);
+    localStorage.setItem("cartQuantity", 0);
     cartQuantity = 0;
 }
 // default operator
@@ -11,7 +11,7 @@ if(!cartQuantity) {
 
 function updateQuantity(value) {
     cartQuantity = cartQuantity + value;
-    localStorage.getItem("cartQuantity", cartQuantity);
+    localStorage.setItem("cartQuantity", cartQuantity);
 }
 
 function displayQuantity() {
@@ -20,6 +20,6 @@ function displayQuantity() {
 
 function resetCart() {
     cartQuantity = 0;
-    localStorage.getItem("cartQuantity", cartQuantity);
+    localStorage.setItem("cartQuantity", cartQuantity);
     console.log("The cart has been reset");
 }
